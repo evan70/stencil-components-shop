@@ -1,0 +1,19 @@
+.page-footer {
+    display: block;
+    @include p(lg);
+    @include bg-color(light, light);
+
+    .footer-wrapper {
+        max-width: 1240px;
+        @include mx(auto);
+
+        a {
+            text-decoration: none;
+            @include color(dark);
+
+            @include hover-focus {
+                text-decoration: none;
+            }
+        }
+    }
+}

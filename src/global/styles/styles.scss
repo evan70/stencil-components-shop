@@ -1,0 +1,27 @@
+@import 'fonts';
+@import 'variables';
+@import '../../../node_modules/kickstand-ui/src/scss/styles.scss';
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    a {
+        @include color(primary, lighter);
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        @include p(lg);
+        @include mx(auto);
+
+        .content-wrapper {
+            max-width: 1240px;
+            @include mx(auto);
+        }
+    }
+}
